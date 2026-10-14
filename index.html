@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">MiPágina</a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+      <nav id="nav" class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <h1>Bienvenido a MiPágina</h1>
+        <p>Una página web sencilla, rápida y responsive — lista para personalizar.</p>
+        <a class="btn primary" href="#contacto">Contáctanos</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="container section">
+      <h2>Servicios</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Diseño web</h3>
+          <p>Creación de sitios web modernos y adaptables a móviles.</p>
+        </article>
+        <article class="card">
+          <h3>Desarrollo</h3>
+          <p>Frontend y backend con buenas prácticas y rendimiento.</p>
+        </article>
+        <article class="card">
+          <h3>Mantenimiento</h3>
+          <p>Soporte y mejoras continuas para tu proyecto.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="container section about">
+      <h2>Sobre nosotros</h2>
+      <p>Somos un equipo que ayuda a transformar ideas en experiencias digitales agradables y funcionales.</p>
+    </section>
+
+    <section id="contacto" class="container section contact">
+      <h2>Contacto</h2>
+      <form id="contactForm" novalidate>
+        <label>
+          Nombre
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MiPágina. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
