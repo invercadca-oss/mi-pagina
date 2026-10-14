@@ -1,4 +1,4 @@
-# Mi página web (estática)
+# arqpantoja — Página web (estática)
 
 Página web estática sencilla con HTML, CSS y JavaScript.
 
